@@ -1,0 +1,1234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B039DFB2000D3C7006F8B30 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B039DFA2000D3C6006F8B30 /* SlideMenuController.swift */; };
+		0B039DFD2000D463006F8B30 /* HALeftNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B039DFC2000D463006F8B30 /* HALeftNavigationVC.swift */; };
+		0B039E002000D7EC006F8B30 /* ImageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B039DFE2000D7EC006F8B30 /* ImageHeaderView.xib */; };
+		0B039E012000D7EC006F8B30 /* ImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B039DFF2000D7EC006F8B30 /* ImageHeaderView.swift */; };
+		0B039E042000D945006F8B30 /* HALeftVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B039E022000D945006F8B30 /* HALeftVCCell.swift */; };
+		0B039E052000D945006F8B30 /* HALeftVCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B039E032000D945006F8B30 /* HALeftVCCell.xib */; };
+		0B039E0720010C80006F8B30 /* ExSlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B039E0620010C80006F8B30 /* ExSlideMenuController.swift */; };
+		0B039E0A20010D0E006F8B30 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B039E0920010D0E006F8B30 /* UIApplication.swift */; };
+		0B322A82200A5AEF00FC5212 /* HALoggedInUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B322A81200A5AEF00FC5212 /* HALoggedInUser.swift */; };
+		0B5B34B32009DBE900CA79DF /* HealthAssure.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0B5B34B22009DBE900CA79DF /* HealthAssure.sqlite */; };
+		0B5B34C02009E19700CA79DF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B34B62009E19600CA79DF /* FMDatabase.m */; };
+		0B5B34C12009E19700CA79DF /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B34B82009E19600CA79DF /* FMDatabaseAdditions.m */; };
+		0B5B34C22009E19700CA79DF /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B34BA2009E19600CA79DF /* FMDatabasePool.m */; };
+		0B5B34C32009E19700CA79DF /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B34BC2009E19600CA79DF /* FMDatabaseQueue.m */; };
+		0B5B34C42009E19700CA79DF /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B34BF2009E19600CA79DF /* FMResultSet.m */; };
+		0B5B34C6200A0E4400CA79DF /* HADatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B34C5200A0E4400CA79DF /* HADatabase.swift */; };
+		0B8428201FF790C300A2404F /* HAHelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84281F1FF790C200A2404F /* HAHelperClass.swift */; };
+		221189981FFFAF6500C05EC3 /* HAProviderListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221189971FFFAF6500C05EC3 /* HAProviderListVC.swift */; };
+		221FE36F1FFD089800BBB04B /* HADiagnosticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221FE36E1FFD089800BBB04B /* HADiagnosticViewController.swift */; };
+		221FE3711FFD116900BBB04B /* SpecialistConsultationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221FE3701FFD116900BBB04B /* SpecialistConsultationVC.swift */; };
+		223357CC1FFDF0D3005D4E79 /* HASearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223357CB1FFDF0D3005D4E79 /* HASearchCityViewController.swift */; };
+		2244F5441FF25DBA00323ED8 /* HAForgotPwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244F5431FF25DBA00323ED8 /* HAForgotPwdViewController.swift */; };
+		2244F5471FF2627D00323ED8 /* HAOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244F5461FF2627D00323ED8 /* HAOTPViewController.swift */; };
+		2270CA8B1FFCACFE00A41EF7 /* HAHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2270CA8A1FFCACFE00A41EF7 /* HAHomeCollectionViewCell.swift */; };
+		2270CA8E1FFCDAAD00A41EF7 /* HABuyServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2270CA8D1FFCDAAD00A41EF7 /* HABuyServicesViewController.swift */; };
+		2270CA911FFCE05300A41EF7 /* HABuyServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2270CA8F1FFCE05300A41EF7 /* HABuyServicesCell.swift */; };
+		2270CA921FFCE05300A41EF7 /* HABuyServicesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2270CA901FFCE05300A41EF7 /* HABuyServicesCell.xib */; };
+		2270CA941FFCF55300A41EF7 /* HAPromoCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2270CA931FFCF55300A41EF7 /* HAPromoCodeViewController.swift */; };
+		22821EC71FF4C50400BF7492 /* HARegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22821EC61FF4C50400BF7492 /* HARegistrationViewController.swift */; };
+		22821ECA1FF4CAF600BF7492 /* HARegistrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22821EC81FF4CAF600BF7492 /* HARegistrationCell.swift */; };
+		22821ECB1FF4CAF600BF7492 /* HARegistrationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22821EC91FF4CAF600BF7492 /* HARegistrationCell.xib */; };
+		2287C8C42003AAE5005E604A /* HAProviderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287C8C32003AAE4005E604A /* HAProviderListTableViewCell.swift */; };
+		22884C931FF643F600C42643 /* HASwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22884C921FF643F600C42643 /* HASwiftLoader.swift */; };
+		22884C951FF64FE500C42643 /* HAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22884C941FF64FE500C42643 /* HAConstants.swift */; };
+		22884C991FF65F5C00C42643 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22884C981FF65F5C00C42643 /* SystemConfiguration.framework */; };
+		22884C9B1FF6606A00C42643 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22884C9A1FF6606A00C42643 /* Security.framework */; };
+		22884C9D1FF6607700C42643 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22884C9C1FF6607700C42643 /* CFNetwork.framework */; };
+		2293CC301FFB51FA00AD6427 /* HAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293CC2F1FFB51FA00AD6427 /* HAHomeViewController.swift */; };
+		2293CC351FFB527800AD6427 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2293CC331FFB527800AD6427 /* Home.storyboard */; };
+		229830901FF2267400737ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2298308F1FF2267400737ACA /* AppDelegate.swift */; };
+		229830951FF2267400737ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229830931FF2267400737ACA /* Main.storyboard */; };
+		229830971FF2267400737ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229830961FF2267400737ACA /* Assets.xcassets */; };
+		2298309A1FF2267400737ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229830981FF2267400737ACA /* LaunchScreen.storyboard */; };
+		229830A51FF2267400737ACA /* HealthAssureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229830A41FF2267400737ACA /* HealthAssureTests.swift */; };
+		229830B01FF2267400737ACA /* HealthAssureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229830AF1FF2267400737ACA /* HealthAssureUITests.swift */; };
+		229830CA1FF23C8200737ACA /* HALoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229830C91FF23C8200737ACA /* HALoginViewController.swift */; };
+		22D1D87B1FFE078C007B9A9A /* HAUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D1D87A1FFE078C007B9A9A /* HAUtils.swift */; };
+		44C7CF2CE7F9A2D27CEDD82A /* Pods_HealthAssure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3083AA17298FEEE24A3E6F42 /* Pods_HealthAssure.framework */; };
+		7AFDCB86FB548C8843103B2E /* Pods_HealthAssureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030879BB6E91E93622755597 /* Pods_HealthAssureTests.framework */; };
+		AE604822200619DD00F2697A /* HAAboutHealthAssureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE604821200619DC00F2697A /* HAAboutHealthAssureVC.swift */; };
+		AE868D9A200F1B0C0029BD17 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AE868D99200F1B0C0029BD17 /* GoogleMaps.bundle */; };
+		BE122A85200E09C200D40113 /* HAAvailibilityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE122A84200E09C200D40113 /* HAAvailibilityTableViewCell.swift */; };
+		BE122A87200E09DE00D40113 /* HAAvailibilityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE122A86200E09DE00D40113 /* HAAvailibilityCollectionViewCell.swift */; };
+		BE122A89200E09F300D40113 /* HAAviailibityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE122A88200E09F300D40113 /* HAAviailibityViewController.swift */; };
+		BE122A8D200E3A2100D40113 /* HABookingCancelPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE122A8C200E3A2100D40113 /* HABookingCancelPopup.xib */; };
+		BE122A8F200E3C2D00D40113 /* HABookingCancelPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE122A8E200E3C2D00D40113 /* HABookingCancelPopup.swift */; };
+		BE423C792004A21F00468D84 /* textfieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE423C782004A21E00468D84 /* textfieldExtension.swift */; };
+		BE5DDAD9200740E300B973D7 /* Webservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5DDAD8200740E300B973D7 /* Webservices.swift */; };
+		BE5DDADB2007630500B973D7 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5DDADA2007630500B973D7 /* Singleton.swift */; };
+		BE67224F200F23350005D10B /* HAbookingAppointmentPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE67224E200F23350005D10B /* HAbookingAppointmentPopup.xib */; };
+		BE672251200F233F0005D10B /* HAbookingAppointmentPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE672250200F233E0005D10B /* HAbookingAppointmentPopup.swift */; };
+		BE72FE2E2005FA800020418A /* HA_HospitalDetail_popup.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE72FE2D2005FA7F0020418A /* HA_HospitalDetail_popup.xib */; };
+		BE72FE302005FA8C0020418A /* HA_HospitalDetail_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE72FE2F2005FA8B0020418A /* HA_HospitalDetail_popup.swift */; };
+		BE72FE322005FAA00020418A /* HAHomeVIewController_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE72FE312005FAA00020418A /* HAHomeVIewController_extension.swift */; };
+		BE72FE3A200636AF0020418A /* ha_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BE72FE39200636AE0020418A /* ha_video.mp4 */; };
+		BE72FE3D200636D50020418A /* HAVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE72FE3B200636D40020418A /* HAVideoViewController.swift */; };
+		BE72FE3E200636D50020418A /* WelcomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE72FE3C200636D40020418A /* WelcomeViewViewController.swift */; };
+		BE8CE8222008A9AA00FDEE4A /* HAProviderList_Sos_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CE8212008A9AA00FDEE4A /* HAProviderList_Sos_popup.swift */; };
+		BE8CE8242008A9C900FDEE4A /* HAProviderList_Sos_popup.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8CE8232008A9C900FDEE4A /* HAProviderList_Sos_popup.xib */; };
+		BE8CE8262008C8C100FDEE4A /* HAHome_Services_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CE8252008C8C100FDEE4A /* HAHome_Services_popup.swift */; };
+		BE8CE8282008C8D900FDEE4A /* HAHome_Services_popup.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8CE8272008C8D900FDEE4A /* HAHome_Services_popup.xib */; };
+		BE8EE36C200C7E5A00947DF9 /* HAHome_services_popup_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8EE36B200C7E5A00947DF9 /* HAHome_services_popup_Cell.swift */; };
+		BE8EE36E200C7ED000947DF9 /* HAHome_services_popup_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8EE36D200C7ED000947DF9 /* HAHome_services_popup_Cell.xib */; };
+		BE8EE370200CA1DE00947DF9 /* Booking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8EE36F200CA1DE00947DF9 /* Booking.storyboard */; };
+		BE8EE373200CB59600947DF9 /* HABookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8EE372200CB59600947DF9 /* HABookingViewController.swift */; };
+		BE8EE375200CE6CB00947DF9 /* membersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8EE374200CE6CB00947DF9 /* membersTableViewCell.swift */; };
+		BEBABD15200F741D005DF217 /* HAPromoCode_popup.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEBABD14200F741D005DF217 /* HAPromoCode_popup.xib */; };
+		BEBABD17200F775A005DF217 /* HAPromoCode_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBABD16200F775A005DF217 /* HAPromoCode_popup.swift */; };
+		BEBABD19200F87FA005DF217 /* HABookingViewController_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBABD18200F87FA005DF217 /* HABookingViewController_extension.swift */; };
+		BEBABD1B200F88AA005DF217 /* HADatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEBABD1A200F88AA005DF217 /* HADatePicker.xib */; };
+		BEBABD1D200F8A6E005DF217 /* HADatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBABD1C200F8A6E005DF217 /* HADatePicker.swift */; };
+		BEE9428520088670004B02FC /* HAFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9428420088670004B02FC /* HAFilterViewController.swift */; };
+		C90014D3C04700008787A132 /* Pods_HealthAssureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A67D5FEC4C21F42D2FDA70 /* Pods_HealthAssureUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		229830A11FF2267400737ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 229830841FF2267400737ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2298308B1FF2267400737ACA;
+			remoteInfo = HealthAssure;
+		};
+		229830AC1FF2267400737ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 229830841FF2267400737ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2298308B1FF2267400737ACA;
+			remoteInfo = HealthAssure;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030879BB6E91E93622755597 /* Pods_HealthAssureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthAssureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B039DFA2000D3C6006F8B30 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		0B039DFC2000D463006F8B30 /* HALeftNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HALeftNavigationVC.swift; sourceTree = "<group>"; };
+		0B039DFE2000D7EC006F8B30 /* ImageHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageHeaderView.xib; sourceTree = "<group>"; };
+		0B039DFF2000D7EC006F8B30 /* ImageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHeaderView.swift; sourceTree = "<group>"; };
+		0B039E022000D945006F8B30 /* HALeftVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HALeftVCCell.swift; sourceTree = "<group>"; };
+		0B039E032000D945006F8B30 /* HALeftVCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HALeftVCCell.xib; sourceTree = "<group>"; };
+		0B039E0620010C80006F8B30 /* ExSlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExSlideMenuController.swift; sourceTree = "<group>"; };
+		0B039E0920010D0E006F8B30 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		0B322A81200A5AEF00FC5212 /* HALoggedInUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HALoggedInUser.swift; sourceTree = "<group>"; };
+		0B5B34B22009DBE900CA79DF /* HealthAssure.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = HealthAssure.sqlite; sourceTree = "<group>"; };
+		0B5B34B52009E19600CA79DF /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		0B5B34B62009E19600CA79DF /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		0B5B34B72009E19600CA79DF /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		0B5B34B82009E19600CA79DF /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		0B5B34B92009E19600CA79DF /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		0B5B34BA2009E19600CA79DF /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		0B5B34BB2009E19600CA79DF /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		0B5B34BC2009E19600CA79DF /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		0B5B34BD2009E19600CA79DF /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		0B5B34BE2009E19600CA79DF /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		0B5B34BF2009E19600CA79DF /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		0B5B34C5200A0E4400CA79DF /* HADatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADatabase.swift; sourceTree = "<group>"; };
+		0B5B34CC200A15E800CA79DF /* HealthAssure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthAssure-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B84281F1FF790C200A2404F /* HAHelperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAHelperClass.swift; sourceTree = "<group>"; };
+		221189971FFFAF6500C05EC3 /* HAProviderListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAProviderListVC.swift; sourceTree = "<group>"; };
+		221FE36E1FFD089800BBB04B /* HADiagnosticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADiagnosticViewController.swift; sourceTree = "<group>"; };
+		221FE3701FFD116900BBB04B /* SpecialistConsultationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistConsultationVC.swift; sourceTree = "<group>"; };
+		223357CB1FFDF0D3005D4E79 /* HASearchCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HASearchCityViewController.swift; sourceTree = "<group>"; };
+		2244F5431FF25DBA00323ED8 /* HAForgotPwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAForgotPwdViewController.swift; sourceTree = "<group>"; };
+		2244F5461FF2627D00323ED8 /* HAOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAOTPViewController.swift; sourceTree = "<group>"; };
+		2270CA8A1FFCACFE00A41EF7 /* HAHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		2270CA8D1FFCDAAD00A41EF7 /* HABuyServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABuyServicesViewController.swift; sourceTree = "<group>"; };
+		2270CA8F1FFCE05300A41EF7 /* HABuyServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABuyServicesCell.swift; sourceTree = "<group>"; };
+		2270CA901FFCE05300A41EF7 /* HABuyServicesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HABuyServicesCell.xib; sourceTree = "<group>"; };
+		2270CA931FFCF55300A41EF7 /* HAPromoCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPromoCodeViewController.swift; sourceTree = "<group>"; };
+		22821EC61FF4C50400BF7492 /* HARegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HARegistrationViewController.swift; sourceTree = "<group>"; };
+		22821EC81FF4CAF600BF7492 /* HARegistrationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HARegistrationCell.swift; sourceTree = "<group>"; };
+		22821EC91FF4CAF600BF7492 /* HARegistrationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HARegistrationCell.xib; sourceTree = "<group>"; };
+		2287C8C32003AAE4005E604A /* HAProviderListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HAProviderListTableViewCell.swift; sourceTree = "<group>"; };
+		22884C921FF643F600C42643 /* HASwiftLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HASwiftLoader.swift; sourceTree = "<group>"; };
+		22884C941FF64FE500C42643 /* HAConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAConstants.swift; sourceTree = "<group>"; };
+		22884C981FF65F5C00C42643 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22884C9A1FF6606A00C42643 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		22884C9C1FF6607700C42643 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2293CC2F1FFB51FA00AD6427 /* HAHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAHomeViewController.swift; sourceTree = "<group>"; };
+		2293CC341FFB527800AD6427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		2298308C1FF2267400737ACA /* HealthAssure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthAssure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2298308F1FF2267400737ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		229830941FF2267400737ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		229830961FF2267400737ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		229830991FF2267400737ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2298309B1FF2267400737ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229830A01FF2267400737ACA /* HealthAssureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthAssureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		229830A41FF2267400737ACA /* HealthAssureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthAssureTests.swift; sourceTree = "<group>"; };
+		229830A61FF2267400737ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229830AB1FF2267400737ACA /* HealthAssureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthAssureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		229830AF1FF2267400737ACA /* HealthAssureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthAssureUITests.swift; sourceTree = "<group>"; };
+		229830B11FF2267400737ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229830C91FF23C8200737ACA /* HALoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HALoginViewController.swift; sourceTree = "<group>"; };
+		22D1D87A1FFE078C007B9A9A /* HAUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAUtils.swift; sourceTree = "<group>"; };
+		22D1D87D1FFE1FF7007B9A9A /* HealthAssure.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthAssure.entitlements; sourceTree = "<group>"; };
+		3083AA17298FEEE24A3E6F42 /* Pods_HealthAssure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthAssure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C326F1BF98B25944892D7C7 /* Pods-HealthAssureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssureUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssureUITests/Pods-HealthAssureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9ABDBD920083B32786AC8947 /* Pods-HealthAssure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssure/Pods-HealthAssure.debug.xcconfig"; sourceTree = "<group>"; };
+		A57A79705C276CD3128C0CDA /* Pods-HealthAssureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssureTests/Pods-HealthAssureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7A67D5FEC4C21F42D2FDA70 /* Pods_HealthAssureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthAssureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE604821200619DC00F2697A /* HAAboutHealthAssureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HAAboutHealthAssureVC.swift; sourceTree = "<group>"; };
+		AE868D99200F1B0C0029BD17 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		BE122A84200E09C200D40113 /* HAAvailibilityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAAvailibilityTableViewCell.swift; sourceTree = "<group>"; };
+		BE122A86200E09DE00D40113 /* HAAvailibilityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAAvailibilityCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE122A88200E09F300D40113 /* HAAviailibityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAAviailibityViewController.swift; sourceTree = "<group>"; };
+		BE122A8C200E3A2100D40113 /* HABookingCancelPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HABookingCancelPopup.xib; sourceTree = "<group>"; };
+		BE122A8E200E3C2D00D40113 /* HABookingCancelPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABookingCancelPopup.swift; sourceTree = "<group>"; };
+		BE423C782004A21E00468D84 /* textfieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textfieldExtension.swift; sourceTree = "<group>"; };
+		BE5DDAD8200740E300B973D7 /* Webservices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservices.swift; sourceTree = "<group>"; };
+		BE5DDADA2007630500B973D7 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		BE67224E200F23350005D10B /* HAbookingAppointmentPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAbookingAppointmentPopup.xib; sourceTree = "<group>"; };
+		BE672250200F233E0005D10B /* HAbookingAppointmentPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HAbookingAppointmentPopup.swift; sourceTree = "<group>"; };
+		BE72FE2D2005FA7F0020418A /* HA_HospitalDetail_popup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HA_HospitalDetail_popup.xib; sourceTree = "<group>"; };
+		BE72FE2F2005FA8B0020418A /* HA_HospitalDetail_popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HA_HospitalDetail_popup.swift; sourceTree = "<group>"; };
+		BE72FE312005FAA00020418A /* HAHomeVIewController_extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HAHomeVIewController_extension.swift; sourceTree = "<group>"; };
+		BE72FE39200636AE0020418A /* ha_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ha_video.mp4; sourceTree = "<group>"; };
+		BE72FE3B200636D40020418A /* HAVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HAVideoViewController.swift; sourceTree = "<group>"; };
+		BE72FE3C200636D40020418A /* WelcomeViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewViewController.swift; sourceTree = "<group>"; };
+		BE8CE8212008A9AA00FDEE4A /* HAProviderList_Sos_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAProviderList_Sos_popup.swift; sourceTree = "<group>"; };
+		BE8CE8232008A9C900FDEE4A /* HAProviderList_Sos_popup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HAProviderList_Sos_popup.xib; sourceTree = "<group>"; };
+		BE8CE8252008C8C100FDEE4A /* HAHome_Services_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAHome_Services_popup.swift; sourceTree = "<group>"; };
+		BE8CE8272008C8D900FDEE4A /* HAHome_Services_popup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HAHome_Services_popup.xib; sourceTree = "<group>"; };
+		BE8EE36B200C7E5A00947DF9 /* HAHome_services_popup_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAHome_services_popup_Cell.swift; sourceTree = "<group>"; };
+		BE8EE36D200C7ED000947DF9 /* HAHome_services_popup_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HAHome_services_popup_Cell.xib; sourceTree = "<group>"; };
+		BE8EE36F200CA1DE00947DF9 /* Booking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Booking.storyboard; sourceTree = "<group>"; };
+		BE8EE372200CB59600947DF9 /* HABookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABookingViewController.swift; sourceTree = "<group>"; };
+		BE8EE374200CE6CB00947DF9 /* membersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = membersTableViewCell.swift; sourceTree = "<group>"; };
+		BEBABD14200F741D005DF217 /* HAPromoCode_popup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HAPromoCode_popup.xib; sourceTree = "<group>"; };
+		BEBABD16200F775A005DF217 /* HAPromoCode_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPromoCode_popup.swift; sourceTree = "<group>"; };
+		BEBABD18200F87FA005DF217 /* HABookingViewController_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABookingViewController_extension.swift; sourceTree = "<group>"; };
+		BEBABD1A200F88AA005DF217 /* HADatePicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HADatePicker.xib; sourceTree = "<group>"; };
+		BEBABD1C200F8A6E005DF217 /* HADatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADatePicker.swift; sourceTree = "<group>"; };
+		BEE9428420088670004B02FC /* HAFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAFilterViewController.swift; sourceTree = "<group>"; };
+		CC6DDD3C29325E3F8EF3451F /* Pods-HealthAssure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssure.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssure/Pods-HealthAssure.release.xcconfig"; sourceTree = "<group>"; };
+		DA5FDB15A173910B23811F4F /* Pods-HealthAssureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssureUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssureUITests/Pods-HealthAssureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5745181C58465C565B527B6 /* Pods-HealthAssureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssureTests/Pods-HealthAssureTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		229830891FF2267400737ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22884C9D1FF6607700C42643 /* CFNetwork.framework in Frameworks */,
+				22884C9B1FF6606A00C42643 /* Security.framework in Frameworks */,
+				22884C991FF65F5C00C42643 /* SystemConfiguration.framework in Frameworks */,
+				44C7CF2CE7F9A2D27CEDD82A /* Pods_HealthAssure.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2298309D1FF2267400737ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AFDCB86FB548C8843103B2E /* Pods_HealthAssureTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229830A81FF2267400737ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90014D3C04700008787A132 /* Pods_HealthAssureUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B039E0820010CD8006F8B30 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0B039E0920010D0E006F8B30 /* UIApplication.swift */,
+				BE423C782004A21E00468D84 /* textfieldExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0B5B34B02009DB7500CA79DF /* External Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0B5B34B42009E19600CA79DF /* FMDB_Sqlite */,
+			);
+			path = "External Sources";
+			sourceTree = "<group>";
+		};
+		0B5B34B12009DB9B00CA79DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B5B34B22009DBE900CA79DF /* HealthAssure.sqlite */,
+				AE868D99200F1B0C0029BD17 /* GoogleMaps.bundle */,
+				BE72FE39200636AE0020418A /* ha_video.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B5B34B42009E19600CA79DF /* FMDB_Sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				0B5B34B52009E19600CA79DF /* FMDatabase.h */,
+				0B5B34B62009E19600CA79DF /* FMDatabase.m */,
+				0B5B34B72009E19600CA79DF /* FMDatabaseAdditions.h */,
+				0B5B34B82009E19600CA79DF /* FMDatabaseAdditions.m */,
+				0B5B34B92009E19600CA79DF /* FMDatabasePool.h */,
+				0B5B34BA2009E19600CA79DF /* FMDatabasePool.m */,
+				0B5B34BB2009E19600CA79DF /* FMDatabaseQueue.h */,
+				0B5B34BC2009E19600CA79DF /* FMDatabaseQueue.m */,
+				0B5B34BD2009E19600CA79DF /* FMDB.h */,
+				0B5B34BE2009E19600CA79DF /* FMResultSet.h */,
+				0B5B34BF2009E19600CA79DF /* FMResultSet.m */,
+			);
+			path = FMDB_Sqlite;
+			sourceTree = "<group>";
+		};
+		2244F5451FF2622E00323ED8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				229830C91FF23C8200737ACA /* HALoginViewController.swift */,
+				2244F5431FF25DBA00323ED8 /* HAForgotPwdViewController.swift */,
+				2244F5461FF2627D00323ED8 /* HAOTPViewController.swift */,
+				22821EC61FF4C50400BF7492 /* HARegistrationViewController.swift */,
+				BE72FE3B200636D40020418A /* HAVideoViewController.swift */,
+				BE72FE3C200636D40020418A /* WelcomeViewViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		22884C911FF643C200C42643 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				22884C921FF643F600C42643 /* HASwiftLoader.swift */,
+				22884C941FF64FE500C42643 /* HAConstants.swift */,
+				0B84281F1FF790C200A2404F /* HAHelperClass.swift */,
+				22D1D87A1FFE078C007B9A9A /* HAUtils.swift */,
+				0B039DFA2000D3C6006F8B30 /* SlideMenuController.swift */,
+				0B039E0620010C80006F8B30 /* ExSlideMenuController.swift */,
+				BE5DDAD8200740E300B973D7 /* Webservices.swift */,
+				BE5DDADA2007630500B973D7 /* Singleton.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2293CC2E1FFB4FA700AD6427 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2293CC2F1FFB51FA00AD6427 /* HAHomeViewController.swift */,
+				BE72FE312005FAA00020418A /* HAHomeVIewController_extension.swift */,
+				2270CA8D1FFCDAAD00A41EF7 /* HABuyServicesViewController.swift */,
+				2270CA931FFCF55300A41EF7 /* HAPromoCodeViewController.swift */,
+				221FE36E1FFD089800BBB04B /* HADiagnosticViewController.swift */,
+				221FE3701FFD116900BBB04B /* SpecialistConsultationVC.swift */,
+				223357CB1FFDF0D3005D4E79 /* HASearchCityViewController.swift */,
+				221189971FFFAF6500C05EC3 /* HAProviderListVC.swift */,
+				0B039DFC2000D463006F8B30 /* HALeftNavigationVC.swift */,
+				AE604821200619DC00F2697A /* HAAboutHealthAssureVC.swift */,
+				BEE9428420088670004B02FC /* HAFilterViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		229830831FF2267400737ACA = {
+			isa = PBXGroup;
+			children = (
+				2298308E1FF2267400737ACA /* HealthAssure */,
+				229830A31FF2267400737ACA /* HealthAssureTests */,
+				229830AE1FF2267400737ACA /* HealthAssureUITests */,
+				2298308D1FF2267400737ACA /* Products */,
+				57F1BD32CCAA0690AC2AE3E6 /* Pods */,
+				64D92248E1CC01576243176D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2298308D1FF2267400737ACA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2298308C1FF2267400737ACA /* HealthAssure.app */,
+				229830A01FF2267400737ACA /* HealthAssureTests.xctest */,
+				229830AB1FF2267400737ACA /* HealthAssureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2298308E1FF2267400737ACA /* HealthAssure */ = {
+			isa = PBXGroup;
+			children = (
+				22D1D87D1FFE1FF7007B9A9A /* HealthAssure.entitlements */,
+				2298308F1FF2267400737ACA /* AppDelegate.swift */,
+				22884C911FF643C200C42643 /* Helper */,
+				229830C11FF22E8400737ACA /* ViewControllers */,
+				229830C51FF22FD500737ACA /* Views */,
+				229830C61FF2302900737ACA /* Model */,
+				0B039E0820010CD8006F8B30 /* Extension */,
+				229830C71FF2305000737ACA /* Configuration */,
+				229830C41FF22F5300737ACA /* Storyboards */,
+				229830961FF2267400737ACA /* Assets.xcassets */,
+				0B5B34B12009DB9B00CA79DF /* Resources */,
+				0B5B34B02009DB7500CA79DF /* External Sources */,
+				2298309B1FF2267400737ACA /* Info.plist */,
+			);
+			path = HealthAssure;
+			sourceTree = "<group>";
+		};
+		229830A31FF2267400737ACA /* HealthAssureTests */ = {
+			isa = PBXGroup;
+			children = (
+				229830A41FF2267400737ACA /* HealthAssureTests.swift */,
+				229830A61FF2267400737ACA /* Info.plist */,
+			);
+			path = HealthAssureTests;
+			sourceTree = "<group>";
+		};
+		229830AE1FF2267400737ACA /* HealthAssureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				229830AF1FF2267400737ACA /* HealthAssureUITests.swift */,
+				229830B11FF2267400737ACA /* Info.plist */,
+			);
+			path = HealthAssureUITests;
+			sourceTree = "<group>";
+		};
+		229830C11FF22E8400737ACA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2244F5451FF2622E00323ED8 /* Login */,
+				2293CC2E1FFB4FA700AD6427 /* Home */,
+				BE8EE371200CA1E800947DF9 /* Booking */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		229830C41FF22F5300737ACA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				229830981FF2267400737ACA /* LaunchScreen.storyboard */,
+				229830931FF2267400737ACA /* Main.storyboard */,
+				2293CC331FFB527800AD6427 /* Home.storyboard */,
+				BE8EE36F200CA1DE00947DF9 /* Booking.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		229830C51FF22FD500737ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE122A8B200E39EF00D40113 /* Home and Login */,
+				BE122A8A200E39E600D40113 /* Booking */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		229830C61FF2302900737ACA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B5B34C5200A0E4400CA79DF /* HADatabase.swift */,
+				0B322A81200A5AEF00FC5212 /* HALoggedInUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		229830C71FF2305000737ACA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				0B5B34CC200A15E800CA79DF /* HealthAssure-Bridging-Header.h */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		57F1BD32CCAA0690AC2AE3E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDBD920083B32786AC8947 /* Pods-HealthAssure.debug.xcconfig */,
+				CC6DDD3C29325E3F8EF3451F /* Pods-HealthAssure.release.xcconfig */,
+				A57A79705C276CD3128C0CDA /* Pods-HealthAssureTests.debug.xcconfig */,
+				F5745181C58465C565B527B6 /* Pods-HealthAssureTests.release.xcconfig */,
+				5C326F1BF98B25944892D7C7 /* Pods-HealthAssureUITests.debug.xcconfig */,
+				DA5FDB15A173910B23811F4F /* Pods-HealthAssureUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		64D92248E1CC01576243176D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22884C9C1FF6607700C42643 /* CFNetwork.framework */,
+				22884C9A1FF6606A00C42643 /* Security.framework */,
+				22884C981FF65F5C00C42643 /* SystemConfiguration.framework */,
+				3083AA17298FEEE24A3E6F42 /* Pods_HealthAssure.framework */,
+				030879BB6E91E93622755597 /* Pods_HealthAssureTests.framework */,
+				A7A67D5FEC4C21F42D2FDA70 /* Pods_HealthAssureUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE122A8A200E39E600D40113 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				BE122A8C200E3A2100D40113 /* HABookingCancelPopup.xib */,
+				BE122A8E200E3C2D00D40113 /* HABookingCancelPopup.swift */,
+				BE67224E200F23350005D10B /* HAbookingAppointmentPopup.xib */,
+				BE672250200F233E0005D10B /* HAbookingAppointmentPopup.swift */,
+				BEBABD14200F741D005DF217 /* HAPromoCode_popup.xib */,
+				BEBABD16200F775A005DF217 /* HAPromoCode_popup.swift */,
+				BEBABD1A200F88AA005DF217 /* HADatePicker.xib */,
+				BEBABD1C200F8A6E005DF217 /* HADatePicker.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		BE122A8B200E39EF00D40113 /* Home and Login */ = {
+			isa = PBXGroup;
+			children = (
+				22821EC81FF4CAF600BF7492 /* HARegistrationCell.swift */,
+				22821EC91FF4CAF600BF7492 /* HARegistrationCell.xib */,
+				2270CA8A1FFCACFE00A41EF7 /* HAHomeCollectionViewCell.swift */,
+				2270CA8F1FFCE05300A41EF7 /* HABuyServicesCell.swift */,
+				2270CA901FFCE05300A41EF7 /* HABuyServicesCell.xib */,
+				0B039DFF2000D7EC006F8B30 /* ImageHeaderView.swift */,
+				0B039DFE2000D7EC006F8B30 /* ImageHeaderView.xib */,
+				0B039E022000D945006F8B30 /* HALeftVCCell.swift */,
+				0B039E032000D945006F8B30 /* HALeftVCCell.xib */,
+				2287C8C32003AAE4005E604A /* HAProviderListTableViewCell.swift */,
+				BE72FE2D2005FA7F0020418A /* HA_HospitalDetail_popup.xib */,
+				BE72FE2F2005FA8B0020418A /* HA_HospitalDetail_popup.swift */,
+				BE8CE8232008A9C900FDEE4A /* HAProviderList_Sos_popup.xib */,
+				BE8CE8212008A9AA00FDEE4A /* HAProviderList_Sos_popup.swift */,
+				BE8CE8272008C8D900FDEE4A /* HAHome_Services_popup.xib */,
+				BE8CE8252008C8C100FDEE4A /* HAHome_Services_popup.swift */,
+				BE8EE36D200C7ED000947DF9 /* HAHome_services_popup_Cell.xib */,
+				BE8EE36B200C7E5A00947DF9 /* HAHome_services_popup_Cell.swift */,
+			);
+			path = "Home and Login";
+			sourceTree = "<group>";
+		};
+		BE8EE371200CA1E800947DF9 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				BE8EE372200CB59600947DF9 /* HABookingViewController.swift */,
+				BEBABD18200F87FA005DF217 /* HABookingViewController_extension.swift */,
+				BE8EE374200CE6CB00947DF9 /* membersTableViewCell.swift */,
+				BE122A88200E09F300D40113 /* HAAviailibityViewController.swift */,
+				BE122A84200E09C200D40113 /* HAAvailibilityTableViewCell.swift */,
+				BE122A86200E09DE00D40113 /* HAAvailibilityCollectionViewCell.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2298308B1FF2267400737ACA /* HealthAssure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229830B41FF2267400737ACA /* Build configuration list for PBXNativeTarget "HealthAssure" */;
+			buildPhases = (
+				317CDCB9D0700207A2468E49 /* [CP] Check Pods Manifest.lock */,
+				229830881FF2267400737ACA /* Sources */,
+				229830891FF2267400737ACA /* Frameworks */,
+				2298308A1FF2267400737ACA /* Resources */,
+				0BFDDBFEFD8C374FE694D45C /* [CP] Embed Pods Frameworks */,
+				B0F70363AF3FA71BA53063F0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthAssure;
+			productName = HealthAssure;
+			productReference = 2298308C1FF2267400737ACA /* HealthAssure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2298309F1FF2267400737ACA /* HealthAssureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229830B71FF2267400737ACA /* Build configuration list for PBXNativeTarget "HealthAssureTests" */;
+			buildPhases = (
+				FF902514E7AEB098E5F78D29 /* [CP] Check Pods Manifest.lock */,
+				2298309C1FF2267400737ACA /* Sources */,
+				2298309D1FF2267400737ACA /* Frameworks */,
+				2298309E1FF2267400737ACA /* Resources */,
+				D8490985443847C2355F3B03 /* [CP] Embed Pods Frameworks */,
+				F1247197140075BD727B0320 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				229830A21FF2267400737ACA /* PBXTargetDependency */,
+			);
+			name = HealthAssureTests;
+			productName = HealthAssureTests;
+			productReference = 229830A01FF2267400737ACA /* HealthAssureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		229830AA1FF2267400737ACA /* HealthAssureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229830BA1FF2267400737ACA /* Build configuration list for PBXNativeTarget "HealthAssureUITests" */;
+			buildPhases = (
+				4C5BCE135951E290B4226851 /* [CP] Check Pods Manifest.lock */,
+				229830A71FF2267400737ACA /* Sources */,
+				229830A81FF2267400737ACA /* Frameworks */,
+				229830A91FF2267400737ACA /* Resources */,
+				EFCF7E0E3E60CFCAB6C7B6A0 /* [CP] Embed Pods Frameworks */,
+				9706AB7A9CD4429CA6B9CF68 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				229830AD1FF2267400737ACA /* PBXTargetDependency */,
+			);
+			name = HealthAssureUITests;
+			productName = HealthAssureUITests;
+			productReference = 229830AB1FF2267400737ACA /* HealthAssureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		229830841FF2267400737ACA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Unikove;
+				TargetAttributes = {
+					2298308B1FF2267400737ACA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					2298309F1FF2267400737ACA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2298308B1FF2267400737ACA;
+					};
+					229830AA1FF2267400737ACA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2298308B1FF2267400737ACA;
+					};
+				};
+			};
+			buildConfigurationList = 229830871FF2267400737ACA /* Build configuration list for PBXProject "HealthAssure" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 229830831FF2267400737ACA;
+			productRefGroup = 2298308D1FF2267400737ACA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2298308B1FF2267400737ACA /* HealthAssure */,
+				2298309F1FF2267400737ACA /* HealthAssureTests */,
+				229830AA1FF2267400737ACA /* HealthAssureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2298308A1FF2267400737ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2298309A1FF2267400737ACA /* LaunchScreen.storyboard in Resources */,
+				AE868D9A200F1B0C0029BD17 /* GoogleMaps.bundle in Resources */,
+				BEBABD15200F741D005DF217 /* HAPromoCode_popup.xib in Resources */,
+				2293CC351FFB527800AD6427 /* Home.storyboard in Resources */,
+				229830971FF2267400737ACA /* Assets.xcassets in Resources */,
+				0B039E002000D7EC006F8B30 /* ImageHeaderView.xib in Resources */,
+				BE72FE2E2005FA800020418A /* HA_HospitalDetail_popup.xib in Resources */,
+				229830951FF2267400737ACA /* Main.storyboard in Resources */,
+				BE8EE36E200C7ED000947DF9 /* HAHome_services_popup_Cell.xib in Resources */,
+				22821ECB1FF4CAF600BF7492 /* HARegistrationCell.xib in Resources */,
+				BE8CE8242008A9C900FDEE4A /* HAProviderList_Sos_popup.xib in Resources */,
+				0B039E052000D945006F8B30 /* HALeftVCCell.xib in Resources */,
+				BE72FE3A200636AF0020418A /* ha_video.mp4 in Resources */,
+				BE8EE370200CA1DE00947DF9 /* Booking.storyboard in Resources */,
+				BE8CE8282008C8D900FDEE4A /* HAHome_Services_popup.xib in Resources */,
+				BE122A8D200E3A2100D40113 /* HABookingCancelPopup.xib in Resources */,
+				2270CA921FFCE05300A41EF7 /* HABuyServicesCell.xib in Resources */,
+				0B5B34B32009DBE900CA79DF /* HealthAssure.sqlite in Resources */,
+				BEBABD1B200F88AA005DF217 /* HADatePicker.xib in Resources */,
+				BE67224F200F23350005D10B /* HAbookingAppointmentPopup.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2298309E1FF2267400737ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229830A91FF2267400737ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BFDDBFEFD8C374FE694D45C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HealthAssure/Pods-HealthAssure-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireSwiftyJSON/AlamofireSwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireSwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthAssure/Pods-HealthAssure-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		317CDCB9D0700207A2468E49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthAssure-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C5BCE135951E290B4226851 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthAssureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9706AB7A9CD4429CA6B9CF68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthAssureUITests/Pods-HealthAssureUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0F70363AF3FA71BA53063F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HealthAssure/Pods-HealthAssure-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthAssure/Pods-HealthAssure-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8490985443847C2355F3B03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthAssureTests/Pods-HealthAssureTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFCF7E0E3E60CFCAB6C7B6A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthAssureUITests/Pods-HealthAssureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1247197140075BD727B0320 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthAssureTests/Pods-HealthAssureTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF902514E7AEB098E5F78D29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthAssureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		229830881FF2267400737ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B322A82200A5AEF00FC5212 /* HALoggedInUser.swift in Sources */,
+				BEBABD1D200F8A6E005DF217 /* HADatePicker.swift in Sources */,
+				BE72FE3E200636D50020418A /* WelcomeViewViewController.swift in Sources */,
+				0B5B34C02009E19700CA79DF /* FMDatabase.m in Sources */,
+				BE8EE373200CB59600947DF9 /* HABookingViewController.swift in Sources */,
+				BE8EE36C200C7E5A00947DF9 /* HAHome_services_popup_Cell.swift in Sources */,
+				2270CA941FFCF55300A41EF7 /* HAPromoCodeViewController.swift in Sources */,
+				2270CA8B1FFCACFE00A41EF7 /* HAHomeCollectionViewCell.swift in Sources */,
+				BE72FE302005FA8C0020418A /* HA_HospitalDetail_popup.swift in Sources */,
+				2244F5471FF2627D00323ED8 /* HAOTPViewController.swift in Sources */,
+				0B039E0A20010D0E006F8B30 /* UIApplication.swift in Sources */,
+				BE72FE3D200636D50020418A /* HAVideoViewController.swift in Sources */,
+				0B5B34C12009E19700CA79DF /* FMDatabaseAdditions.m in Sources */,
+				BEE9428520088670004B02FC /* HAFilterViewController.swift in Sources */,
+				0B039E012000D7EC006F8B30 /* ImageHeaderView.swift in Sources */,
+				229830901FF2267400737ACA /* AppDelegate.swift in Sources */,
+				0B039E0720010C80006F8B30 /* ExSlideMenuController.swift in Sources */,
+				BE122A8F200E3C2D00D40113 /* HABookingCancelPopup.swift in Sources */,
+				223357CC1FFDF0D3005D4E79 /* HASearchCityViewController.swift in Sources */,
+				BE72FE322005FAA00020418A /* HAHomeVIewController_extension.swift in Sources */,
+				BE672251200F233F0005D10B /* HAbookingAppointmentPopup.swift in Sources */,
+				2270CA911FFCE05300A41EF7 /* HABuyServicesCell.swift in Sources */,
+				0B039DFB2000D3C7006F8B30 /* SlideMenuController.swift in Sources */,
+				22884C951FF64FE500C42643 /* HAConstants.swift in Sources */,
+				BE5DDADB2007630500B973D7 /* Singleton.swift in Sources */,
+				BE5DDAD9200740E300B973D7 /* Webservices.swift in Sources */,
+				BEBABD19200F87FA005DF217 /* HABookingViewController_extension.swift in Sources */,
+				2287C8C42003AAE5005E604A /* HAProviderListTableViewCell.swift in Sources */,
+				0B039E042000D945006F8B30 /* HALeftVCCell.swift in Sources */,
+				221189981FFFAF6500C05EC3 /* HAProviderListVC.swift in Sources */,
+				221FE3711FFD116900BBB04B /* SpecialistConsultationVC.swift in Sources */,
+				0B8428201FF790C300A2404F /* HAHelperClass.swift in Sources */,
+				BEBABD17200F775A005DF217 /* HAPromoCode_popup.swift in Sources */,
+				BE423C792004A21F00468D84 /* textfieldExtension.swift in Sources */,
+				BE8CE8222008A9AA00FDEE4A /* HAProviderList_Sos_popup.swift in Sources */,
+				22821ECA1FF4CAF600BF7492 /* HARegistrationCell.swift in Sources */,
+				BE8EE375200CE6CB00947DF9 /* membersTableViewCell.swift in Sources */,
+				22821EC71FF4C50400BF7492 /* HARegistrationViewController.swift in Sources */,
+				BE122A85200E09C200D40113 /* HAAvailibilityTableViewCell.swift in Sources */,
+				221FE36F1FFD089800BBB04B /* HADiagnosticViewController.swift in Sources */,
+				BE122A89200E09F300D40113 /* HAAviailibityViewController.swift in Sources */,
+				BE122A87200E09DE00D40113 /* HAAvailibilityCollectionViewCell.swift in Sources */,
+				0B5B34C42009E19700CA79DF /* FMResultSet.m in Sources */,
+				22D1D87B1FFE078C007B9A9A /* HAUtils.swift in Sources */,
+				229830CA1FF23C8200737ACA /* HALoginViewController.swift in Sources */,
+				BE8CE8262008C8C100FDEE4A /* HAHome_Services_popup.swift in Sources */,
+				AE604822200619DD00F2697A /* HAAboutHealthAssureVC.swift in Sources */,
+				2270CA8E1FFCDAAD00A41EF7 /* HABuyServicesViewController.swift in Sources */,
+				22884C931FF643F600C42643 /* HASwiftLoader.swift in Sources */,
+				2293CC301FFB51FA00AD6427 /* HAHomeViewController.swift in Sources */,
+				0B5B34C32009E19700CA79DF /* FMDatabaseQueue.m in Sources */,
+				0B5B34C6200A0E4400CA79DF /* HADatabase.swift in Sources */,
+				0B5B34C22009E19700CA79DF /* FMDatabasePool.m in Sources */,
+				2244F5441FF25DBA00323ED8 /* HAForgotPwdViewController.swift in Sources */,
+				0B039DFD2000D463006F8B30 /* HALeftNavigationVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2298309C1FF2267400737ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229830A51FF2267400737ACA /* HealthAssureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229830A71FF2267400737ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229830B01FF2267400737ACA /* HealthAssureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		229830A21FF2267400737ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2298308B1FF2267400737ACA /* HealthAssure */;
+			targetProxy = 229830A11FF2267400737ACA /* PBXContainerItemProxy */;
+		};
+		229830AD1FF2267400737ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2298308B1FF2267400737ACA /* HealthAssure */;
+			targetProxy = 229830AC1FF2267400737ACA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2293CC331FFB527800AD6427 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2293CC341FFB527800AD6427 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		229830931FF2267400737ACA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				229830941FF2267400737ACA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		229830981FF2267400737ACA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				229830991FF2267400737ACA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		229830B21FF2267400737ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		229830B31FF2267400737ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		229830B51FF2267400737ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ABDBD920083B32786AC8947 /* Pods-HealthAssure.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthAssure/HealthAssure.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AG8MAP4C6;
+				INFOPLIST_FILE = HealthAssure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unikove.ha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/HealthAssure/Configuration/HealthAssure-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		229830B61FF2267400737ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6DDD3C29325E3F8EF3451F /* Pods-HealthAssure.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthAssure/HealthAssure.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AG8MAP4C6;
+				INFOPLIST_FILE = HealthAssure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unikove.ha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/HealthAssure/Configuration/HealthAssure-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		229830B81FF2267400737ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57A79705C276CD3128C0CDA /* Pods-HealthAssureTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AG8MAP4C6;
+				INFOPLIST_FILE = HealthAssureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unikove.HealthAssureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthAssure.app/HealthAssure";
+			};
+			name = Debug;
+		};
+		229830B91FF2267400737ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5745181C58465C565B527B6 /* Pods-HealthAssureTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AG8MAP4C6;
+				INFOPLIST_FILE = HealthAssureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unikove.HealthAssureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthAssure.app/HealthAssure";
+			};
+			name = Release;
+		};
+		229830BB1FF2267400737ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C326F1BF98B25944892D7C7 /* Pods-HealthAssureUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AG8MAP4C6;
+				INFOPLIST_FILE = HealthAssureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unikove.HealthAssureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthAssure;
+			};
+			name = Debug;
+		};
+		229830BC1FF2267400737ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA5FDB15A173910B23811F4F /* Pods-HealthAssureUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AG8MAP4C6;
+				INFOPLIST_FILE = HealthAssureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unikove.HealthAssureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthAssure;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		229830871FF2267400737ACA /* Build configuration list for PBXProject "HealthAssure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229830B21FF2267400737ACA /* Debug */,
+				229830B31FF2267400737ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229830B41FF2267400737ACA /* Build configuration list for PBXNativeTarget "HealthAssure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229830B51FF2267400737ACA /* Debug */,
+				229830B61FF2267400737ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229830B71FF2267400737ACA /* Build configuration list for PBXNativeTarget "HealthAssureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229830B81FF2267400737ACA /* Debug */,
+				229830B91FF2267400737ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229830BA1FF2267400737ACA /* Build configuration list for PBXNativeTarget "HealthAssureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229830BB1FF2267400737ACA /* Debug */,
+				229830BC1FF2267400737ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 229830841FF2267400737ACA /* Project object */;
+}

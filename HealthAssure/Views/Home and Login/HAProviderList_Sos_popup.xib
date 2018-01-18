@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HAProviderList_Sos_popup" customModule="HealthAssure" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPG-kQ-7hh">
+                    <rect key="frame" x="15" y="234.5" width="345" height="198.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwg-h2-nXd">
+                            <rect key="frame" x="290" y="15" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="VxR-ue-PmU"/>
+                                <constraint firstAttribute="height" constant="40" id="ZS3-Sn-i3I"/>
+                            </constraints>
+                            <state key="normal" image="close"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deA-PI-GLo">
+                            <rect key="frame" x="15" y="22" width="142.5" height="26.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBM-yO-xtv">
+                            <rect key="frame" x="67.5" y="78" width="90" height="90"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uis-CF-8La">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="bg"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="90" id="lnl-qr-wHN"/>
+                                <constraint firstAttribute="width" constant="90" id="tGJ-9h-rpe"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzN-gk-lgO">
+                            <rect key="frame" x="177.5" y="77.5" width="90" height="90"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRF-mR-evc">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="bg"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="p66-uK-7th"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="deA-PI-GLo" firstAttribute="centerY" secondItem="Vwg-h2-nXd" secondAttribute="centerY" id="0Av-bP-fya"/>
+                        <constraint firstItem="AzN-gk-lgO" firstAttribute="leading" secondItem="YBM-yO-xtv" secondAttribute="trailing" constant="20" id="29s-ES-eq0"/>
+                        <constraint firstItem="YBM-yO-xtv" firstAttribute="trailing" secondItem="deA-PI-GLo" secondAttribute="trailing" id="CX6-bg-pfd"/>
+                        <constraint firstItem="YBM-yO-xtv" firstAttribute="top" secondItem="deA-PI-GLo" secondAttribute="bottom" constant="30" id="JYV-7e-OVC"/>
+                        <constraint firstItem="Vwg-h2-nXd" firstAttribute="top" secondItem="aPG-kQ-7hh" secondAttribute="top" constant="15" id="eUZ-i2-Ofi"/>
+                        <constraint firstItem="deA-PI-GLo" firstAttribute="leading" secondItem="aPG-kQ-7hh" secondAttribute="leading" constant="15" id="fdp-Ws-0DD"/>
+                        <constraint firstItem="AzN-gk-lgO" firstAttribute="bottom" secondItem="YBM-yO-xtv" secondAttribute="bottom" id="hYa-nK-nMZ"/>
+                        <constraint firstAttribute="bottom" secondItem="YBM-yO-xtv" secondAttribute="bottom" constant="30" id="hmc-YU-OsV"/>
+                        <constraint firstAttribute="trailing" secondItem="Vwg-h2-nXd" secondAttribute="trailing" constant="15" id="nLY-qO-wEB"/>
+                        <constraint firstItem="AzN-gk-lgO" firstAttribute="top" secondItem="YBM-yO-xtv" secondAttribute="top" id="u5b-qK-CdK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59663955479999997" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="aPG-kQ-7hh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6nr-nm-Bsj"/>
+                <constraint firstItem="aPG-kQ-7hh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="CCS-u3-yKh"/>
+                <constraint firstItem="aPG-kQ-7hh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JXJ-uV-XB4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aPG-kQ-7hh" secondAttribute="trailing" constant="15" id="mVA-by-pVP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="calling_btn" destination="Uis-CF-8La" id="aUq-JO-Eu6"/>
+                <outlet property="calling_view" destination="YBM-yO-xtv" id="Nob-Cw-MSO"/>
+                <outlet property="close_btn" destination="Vwg-h2-nXd" id="sjz-Jd-a9m"/>
+                <outlet property="messaging_btn" destination="cRF-mR-evc" id="oef-v5-uGp"/>
+                <outlet property="messaging_view" destination="AzN-gk-lgO" id="ML8-9q-Zky"/>
+                <outlet property="popOptions_view" destination="aPG-kQ-7hh" id="Vgg-41-hXm"/>
+                <outlet property="title_lbl" destination="deA-PI-GLo" id="lgP-jW-4t7"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+        <image name="close" width="17" height="17"/>
+    </resources>
+</document>

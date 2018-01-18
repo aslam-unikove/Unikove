@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HAHome_services_popup_Cell" rowHeight="70" id="vRs-AM-xp1" customClass="HAHome_services_popup_Cell" customModule="HealthAssure" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vRs-AM-xp1" id="Dj9-cR-bhY">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SC" translatesAutoresizingMaskIntoConstraints="NO" id="4yt-VY-1Uy">
+                        <rect key="frame" x="10" y="19" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="2L4-uW-Q0b"/>
+                            <constraint firstAttribute="height" constant="50" id="Xal-QS-Q3n"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dental" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ako-WP-LzC">
+                        <rect key="frame" x="70" y="34.5" width="317" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfX-vI-Zfq">
+                        <rect key="frame" x="397" y="35.5" width="15" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="bVc-uQ-8aR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ako-WP-LzC" firstAttribute="leading" secondItem="4yt-VY-1Uy" secondAttribute="trailing" constant="10" id="C9l-XM-Q3U"/>
+                    <constraint firstItem="4yt-VY-1Uy" firstAttribute="centerY" secondItem="Dj9-cR-bhY" secondAttribute="centerY" id="KAA-r8-V77"/>
+                    <constraint firstItem="4yt-VY-1Uy" firstAttribute="leading" secondItem="Dj9-cR-bhY" secondAttribute="leading" constant="10" id="Nmf-Kq-zkX"/>
+                    <constraint firstItem="Ako-WP-LzC" firstAttribute="centerY" secondItem="Dj9-cR-bhY" secondAttribute="centerY" id="Nvf-JA-AcI"/>
+                    <constraint firstAttribute="trailing" secondItem="jfX-vI-Zfq" secondAttribute="trailing" id="aQ5-63-M42"/>
+                    <constraint firstItem="jfX-vI-Zfq" firstAttribute="centerY" secondItem="Dj9-cR-bhY" secondAttribute="centerY" id="cDQ-ct-1Cy"/>
+                    <constraint firstItem="jfX-vI-Zfq" firstAttribute="leading" secondItem="Ako-WP-LzC" secondAttribute="trailing" constant="10" id="ghb-gS-3Qm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="count_lbl" destination="jfX-vI-Zfq" id="8gA-HC-7QV"/>
+                <outlet property="leading_service_lbl" destination="C9l-XM-Q3U" id="0Lf-BW-e8b"/>
+                <outlet property="service_imgView" destination="4yt-VY-1Uy" id="p7g-Rq-xwz"/>
+                <outlet property="service_lbl" destination="Ako-WP-LzC" id="1u6-dz-R7h"/>
+            </connections>
+            <point key="canvasLocation" x="-88" y="-44"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="SC" width="32" height="34"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HADatePicker" customModule="HealthAssure" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pX4-4v-DzX">
+                    <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lS0-VG-hDD">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="s04-LD-aL3"/>
+                            </constraints>
+                            <items>
+                                <barButtonItem title="cancel" id="7Kc-Yo-VtJ"/>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="FYZ-z2-bpr"/>
+                                <barButtonItem title="Done" id="Pt4-Vl-UVD"/>
+                            </items>
+                            <color key="tintColor" white="0.0" alpha="0.79719606160000001" colorSpace="calibratedWhite"/>
+                            <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </toolbar>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dW4-Zc-3Zn">
+                            <rect key="frame" x="0.0" y="50" width="375" height="284"/>
+                            <date key="date" timeIntervalSinceReferenceDate="537889293.81450295">
+                                <!--2018-01-17 13:41:33 +0000-->
+                            </date>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="lS0-VG-hDD" secondAttribute="trailing" id="34q-BE-f26"/>
+                        <constraint firstItem="lS0-VG-hDD" firstAttribute="leading" secondItem="pX4-4v-DzX" secondAttribute="leading" id="C1J-DF-HPH"/>
+                        <constraint firstItem="lS0-VG-hDD" firstAttribute="top" secondItem="pX4-4v-DzX" secondAttribute="top" id="Cjy-Ci-Zs4"/>
+                        <constraint firstItem="dW4-Zc-3Zn" firstAttribute="leading" secondItem="pX4-4v-DzX" secondAttribute="leading" id="KAw-bt-Qp8"/>
+                        <constraint firstAttribute="bottom" secondItem="dW4-Zc-3Zn" secondAttribute="bottom" id="MuG-eF-UNA"/>
+                        <constraint firstItem="dW4-Zc-3Zn" firstAttribute="top" secondItem="lS0-VG-hDD" secondAttribute="bottom" id="O3Q-e3-qTq"/>
+                        <constraint firstAttribute="trailing" secondItem="dW4-Zc-3Zn" secondAttribute="trailing" id="fIe-50-X7J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.79719606164383561" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pX4-4v-DzX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BJr-o1-hTn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pX4-4v-DzX" secondAttribute="bottom" id="Yww-eA-4L2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pX4-4v-DzX" secondAttribute="trailing" id="xsW-KY-qb3"/>
+                <constraint firstItem="pX4-4v-DzX" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="ydV-33-uUT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cancel_btn" destination="7Kc-Yo-VtJ" id="nRZ-8e-UJp"/>
+                <outlet property="containing_view" destination="pX4-4v-DzX" id="Lkj-hE-7Zt"/>
+                <outlet property="date_picker" destination="dW4-Zc-3Zn" id="nlh-Xr-L8f"/>
+                <outlet property="done_btn" destination="Pt4-Vl-UVD" id="gfb-Dx-Ccv"/>
+                <outlet property="flexible_space" destination="FYZ-z2-bpr" id="oGg-dE-qme"/>
+                <outlet property="tool_bar" destination="lS0-VG-hDD" id="RMf-hG-AEz"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
