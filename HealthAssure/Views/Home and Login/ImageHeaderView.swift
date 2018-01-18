@@ -15,6 +15,7 @@ class ImageHeaderView : UIView {
     @IBOutlet weak var backgroundImage : UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var emailLbl: UILabel!
+    @IBOutlet var profileButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -11,11 +11,11 @@ import SDWebImage
 
 enum LeftMenu: Int {
     case main = 0
-    case swift
-    case java
-    case go
-    case nonMenu
-    case oneMenu
+    case appoint
+    case account
+    case notif
+    case feed
+    case promotion
     case help
 }
 
@@ -31,10 +31,13 @@ class HALeftNavigationVC: UIViewController, LeftMenuProtocol {
     var menus = [["Name":"HOME", "Image":"leftIcon_1"], ["Name":"MY APPOINTMENTS", "Image":"leftIcon_2"], ["Name":"ACCOUNT", "Image":"leftIcon_3"], ["Name":"NOTIFICATIONS", "Image":"leftIcon_4"], ["Name":"FEEDBACK", "Image":"leftIcon_5"], ["Name":"PROMOTIONS", "Image":"leftIcon_6"], ["Name":"ABOUT HEALTH ASSURE", "Image":"leftIcon_7"]
     ]
     var mainViewController: UIViewController!
-    var swiftViewController: UIViewController!
-    var javaViewController: UIViewController!
+    var appointmentViewController: UIViewController!
+    var accountController: UIViewController!
+    var notificationController: UIViewController!
+    var feedViewController: UIViewController!
     var helpHAViewController: UIViewController!
-    var nonMenuViewController: UIViewController!
+    var promotionViewController: UIViewController!
+    var profileViewController: UIViewController!
     
     var imageHeaderView: ImageHeaderView!
     var selectedIndex = 0
@@ -53,23 +56,36 @@ class HALeftNavigationVC: UIViewController, LeftMenuProtocol {
         
         // Do any additional setup after loading the view.
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
-        let swiftViewController = storyboard.instantiateViewController(withIdentifier: "HAHomeViewController") as! HAHomeViewController
-        self.mainViewController = UINavigationController(rootViewController: swiftViewController)
+        let homeController = storyboard.instantiateViewController(withIdentifier: "HAHomeViewController") as! HAHomeViewController
+        self.mainViewController = UINavigationController(rootViewController: homeController)
         
-        let javaViewController = storyboard.instantiateViewController(withIdentifier: "HABuyServicesViewController") as! HABuyServicesViewController
-        self.javaViewController = UINavigationController(rootViewController: javaViewController)
+        let appointController = storyboard.instantiateViewController(withIdentifier: "HAMyAppointmentsVC") as! HAMyAppointmentsVC
+        self.appointmentViewController = UINavigationController(rootViewController: appointController)
+        
+        let accountVC = storyboard.instantiateViewController(withIdentifier: "HAMyAccountVC") as! HAMyAccountVC
+        self.accountController = UINavigationController(rootViewController: accountVC)
+        
+        let notifVC = storyboard.instantiateViewController(withIdentifier: "HANotificationsVC") as! HANotificationsVC
+        self.notificationController = UINavigationController(rootViewController: notifVC)
+        
+        let feedVC = storyboard.instantiateViewController(withIdentifier: "HAFeedbackVC") as! HAFeedbackVC
+        self.feedViewController = UINavigationController(rootViewController: feedVC)
+        
+        let promoVC = storyboard.instantiateViewController(withIdentifier: "HAPromotionsVC") as! HAPromotionsVC
+        self.promotionViewController = UINavigationController(rootViewController: promoVC)
         
         let helpHAViewController = storyboard.instantiateViewController(withIdentifier: "HAAboutHealthAssureVC") as! HAAboutHealthAssureVC
         self.helpHAViewController = UINavigationController(rootViewController: helpHAViewController)
         
-        //        let helpViewController = storyboard.instantiateViewController(withIdentifier: "HAAboutHealthAssureVC") as! HAAboutHealthAssureVC
-        //        self.helpHAViewController = UINavigationController(rootViewController: helpViewController)
+        let profileVC = storyboard.instantiateViewController(withIdentifier: "HAUserProfileVC") as! HAUserProfileVC
+        self.profileViewController = UINavigationController(rootViewController: profileVC)
         
         let nib = UINib(nibName: "HALeftVCCell", bundle: nil)
         self.tblView.register(nib, forCellReuseIdentifier: "HALeftVCCell")
         
         self.imageHeaderView = ImageHeaderView.loadNib()
         self.view.addSubview(self.imageHeaderView)
+        self.imageHeaderView.profileButton.addTarget(self, action: #selector(tapOnProfileButton), for: .touchUpInside)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -105,9 +121,13 @@ class HALeftNavigationVC: UIViewController, LeftMenuProtocol {
      }
      */
     
+    @objc func tapOnProfileButton(sender: UIButton?) {
+        self.slideMenuController()?.changeMainViewController(self.profileViewController, close: true)
+    }
+    
     @IBAction func tapOnLogoutBtn(_ sender: Any) {
-        let path = HAUtils.getDocumentDirectoryPath() + "/HealthAssure.sqlite";
-        let fileManager = FileManager.default
+//        let path = HAUtils.getDocumentDirectoryPath() + "/HealthAssure.sqlite";
+//        let fileManager = FileManager.default
 //        if fileManager.fileExists(atPath: path) {
 //            do {
 //                // delete file from documents directory
@@ -119,22 +139,7 @@ class HALeftNavigationVC: UIViewController, LeftMenuProtocol {
 //            }
 //        }
         
-        guard let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
-        let documentDirectoryFileUrl = documentsDirectory.appendingPathComponent("HealthAssure.sqlite")
-        
-        // Delete file in document directory
-        if FileManager.default.fileExists(atPath: documentDirectoryFileUrl.path) {
-            do {
-                if #available(iOS 11.0, *) {
-                    try FileManager.default.trashItem(at: documentDirectoryFileUrl, resultingItemURL: nil)
-                } else {
-                    // Fallback on earlier versions
-                    try FileManager.default.removeItem(at: documentDirectoryFileUrl)
-                }
-            } catch {
-                print("Could not delete file: \(error)")
-            }
-        }
+        HADatabase.shared.updateDatabaseOnUserLogout()
         
         let domain = Bundle.main.bundleIdentifier!
         UserDefaults.standard.removePersistentDomain(forName: domain)
@@ -150,20 +155,20 @@ class HALeftNavigationVC: UIViewController, LeftMenuProtocol {
         case .main: do {
             self.slideMenuController()?.changeMainViewController(self.mainViewController, close: true)
             }
-        case .swift: do {
-            //self.slideMenuController()?.changeMainViewController(self.swiftViewController, close: true)
+        case .appoint: do {
+            self.slideMenuController()?.changeMainViewController(self.appointmentViewController, close: true)
             }
-        case .java: do {
-            //self.slideMenuController()?.changeMainViewController(self.javaViewController, close: true)
+        case .account: do {
+            self.slideMenuController()?.changeMainViewController(self.accountController, close: true)
             }
-        case .go: do {
-            //self.slideMenuController()?.changeMainViewController(self.goViewController, close: true)
+        case .notif: do {
+            self.slideMenuController()?.changeMainViewController(self.notificationController, close: true)
             }
-        case .nonMenu: do {
-            //self.slideMenuController()?.changeMainViewController(self.nonMenuViewController, close: true)
+        case .feed: do {
+            self.slideMenuController()?.changeMainViewController(self.feedViewController, close: true)
             }
-        case .oneMenu: do {
-            //self.slideMenuController()?.changeMainViewController(self.nonMenuViewController, close: true)
+        case .promotion: do {
+            self.slideMenuController()?.changeMainViewController(self.promotionViewController, close: true)
             }
         case .help: do {
             self.slideMenuController()?.changeMainViewController(self.helpHAViewController, close: true)

@@ -457,12 +457,26 @@ class HADatabase: NSObject {
                 let currentFlag = ((appointmentDetails.object(at: i) as! NSDictionary).value(forKey: "CurrentFlag")) ?? ""
                 let actionFlag = ((appointmentDetails.object(at: i) as! NSDictionary).value(forKey: "ActionFlag") as? Int) ?? 0
                 
-                //                let query = "INSERT INTO ProviderNearService ('Provider_id', 'Provider_name', 'Address', 'Contact_number', 'Latitude', 'Longitude', 'Icon_small_url', 'Icon_url', 'Gallery_thumbnail_image_url', 'Gallery_image_url', 'Provider_rating', 'City', 'State', 'Rating_allow', 'Credit', 'ProviderCredit', 'Available_services', 'Grade') VALUES ('\(providerId)', '\(providerName)', '\(address)', '\(mobile)', '\(lati)', '\(longi)', '\(iconSmallUrl)', '\(iconUrl)', '\(galleryThumbImgUrl)', '\(galleryImgUrl)', '\(providerRating)', '\(city)', '\(state)', '\(ratingAllow)', '\(credit)', '\(providerCredit)', '\(services)', '\(grade)')"
-                //
-                //                if !database.executeStatements(query) {
-                //                    print("Failed to insert initial data into the database.")
-                //                    print(database.lastError(), database.lastErrorMessage())
-                //                }
+                let relationId = ((appointmentDetails.object(at: i) as! NSDictionary).value(forKey: "RelationId")) ?? ""
+                let emailId = ((appointmentDetails.object(at: i) as! NSDictionary).value(forKey: "EmailId")) ?? ""
+                let planType = ((appointmentDetails.object(at: i) as! NSDictionary).value(forKey: "PlanType")) ?? ""
+                let memberId = ((appointmentDetails.object(at: i) as! NSDictionary).value(forKey: "MemberId")) ?? ""
+                let directAppointment = ((appointmentDetails.object(at: i) as! NSDictionary).value(forKey: "DirectAppointment")) ?? ""
+                let canReason = ((appointmentDetails.object(at: i) as! NSDictionary).value(forKey: "CanReason")) ?? ""
+                let providerId = ((appointmentDetails.object(at: i) as! NSDictionary).value(forKey: "provider_id")) ?? ""
+                
+                let uploadPath = ((appointmentDetails.object(at: i) as! NSDictionary).value(forKey: "ReportUploadPath")) as! NSArray
+                
+                var query = "INSERT INTO ProviderNearService ('appointment_id', 'facility_name', 'provider_name', 'member_name', 'appointment_date', 'appointment_time', 'appointment_status', 'provider_address', 'MobileNo', 'DateTime_milis', 'DateTime', 'FacilityId', 'ServiceType', 'CurrentFlag', 'ActionFlag', 'RelationId', 'EmailId', 'PlanType', 'MemberId', 'DirectAppointment', 'CanReason', 'provider_id') VALUES ('\(appointmentId)', '\(facilityName)', '\(providerName)', '\(memberName)', '\(appointmentDate)', '\(appointmentTime)', '\(appointmentStatus)', '\(providerAddress)', '\(mobileNo)', '\(dateTime_milis)', '\(dateTime)', '\(facilityId)', '\(serviceType)', '\(currentFlag)', '\(actionFlag)', '\(relationId)', '\(emailId)', '\(planType)', '\(memberId)', '\(directAppointment)', '\(canReason)', '\(providerId)')"
+
+                if uploadPath.count > 0 {
+                    query = "INSERT INTO ProviderNearService ('appointment_id', 'facility_name', 'provider_name', 'member_name', 'appointment_date', 'appointment_time', 'appointment_status', 'provider_address', 'MobileNo', 'DateTime_milis', 'DateTime', 'FacilityId', 'ServiceType', 'CurrentFlag', 'ActionFlag', 'RelationId', 'EmailId', 'PlanType', 'MemberId', 'DirectAppointment', 'CanReason', 'provider_id', 'ReportUploadPath') VALUES ('\(appointmentId)', '\(facilityName)', '\(providerName)', '\(memberName)', '\(appointmentDate)', '\(appointmentTime)', '\(appointmentStatus)', '\(providerAddress)', '\(mobileNo)', '\(dateTime_milis)', '\(dateTime)', '\(facilityId)', '\(serviceType)', '\(currentFlag)', '\(actionFlag)', '\(relationId)', '\(emailId)', '\(planType)', '\(memberId)', '\(directAppointment)', '\(canReason)', '\(providerId)', '\(uploadPath)')"
+                }
+                
+                if !database.executeStatements(query) {
+                    print("Failed to insert initial data into the database.")
+                    print(database.lastError(), database.lastErrorMessage())
+                }
             }
             
         }
@@ -491,6 +505,34 @@ class HADatabase: NSObject {
         } catch {
             print(error.localizedDescription)
         }
+        database.close()
+        return ""
+    }
+    
+    //Get Relation member id for booking
+    func getRelationMemberId(relationId: Int, relationType: String) -> String {
+        let database = self.openDatabase()
+        if !database.open() {
+            print("Unable to open database")
+            return ""
+        }
+        var query = "select MemberId from FamilyDetails Where RelationId = \(relationId)"
+        if relationId == 8 || relationId == 9 || relationId == 17 {
+            query = "select MemberId from FamilyDetails Where RelationId = \(relationId) and RelationType = \(relationType)"
+        }
+        
+        
+        do {
+            let results = try database.executeQuery(query, values: nil)
+            if results.next() {
+                let idStr = results.string(forColumn: "MemberId") ?? ""
+                database.close()
+                return idStr
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        
         database.close()
         return ""
     }

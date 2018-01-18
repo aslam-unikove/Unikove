@@ -43,6 +43,9 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVu-i9-BUF">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -52,10 +55,14 @@
                 <constraint firstAttribute="trailing" secondItem="mTT-NC-kRC" secondAttribute="trailing" constant="5" id="6rJ-Cf-XGW"/>
                 <constraint firstItem="ZbG-dD-wZz" firstAttribute="top" secondItem="KsU-S4-hhE" secondAttribute="bottom" constant="5" id="FHC-Cu-GEx"/>
                 <constraint firstItem="crj-Qs-Xeq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Guc-J3-ibn"/>
+                <constraint firstAttribute="trailing" secondItem="YVu-i9-BUF" secondAttribute="trailing" id="MoI-V3-nqv"/>
                 <constraint firstAttribute="trailing" secondItem="ZbG-dD-wZz" secondAttribute="trailing" constant="5" id="RnL-hM-RHv"/>
                 <constraint firstItem="crj-Qs-Xeq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S4z-uS-qaB"/>
                 <constraint firstItem="KsU-S4-hhE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="cn0-Hd-iVZ"/>
                 <constraint firstItem="mTT-NC-kRC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="czH-Lk-ciH"/>
+                <constraint firstAttribute="bottom" secondItem="YVu-i9-BUF" secondAttribute="bottom" id="gWp-cI-aRf"/>
+                <constraint firstItem="YVu-i9-BUF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lJZ-OL-Pgc"/>
+                <constraint firstItem="YVu-i9-BUF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mNc-jE-nga"/>
                 <constraint firstItem="ZbG-dD-wZz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="pB0-SC-PJ0"/>
                 <constraint firstItem="mTT-NC-kRC" firstAttribute="top" secondItem="ZbG-dD-wZz" secondAttribute="bottom" constant="1" id="xiv-ls-ilC"/>
             </constraints>
@@ -64,6 +71,7 @@
                 <outlet property="backgroundImage" destination="crj-Qs-Xeq" id="s6z-e0-bbb"/>
                 <outlet property="emailLbl" destination="mTT-NC-kRC" id="86b-kT-BKV"/>
                 <outlet property="nameLbl" destination="ZbG-dD-wZz" id="W87-xF-b7S"/>
+                <outlet property="profileButton" destination="YVu-i9-BUF" id="3ll-pw-QYx"/>
                 <outlet property="profileImage" destination="KsU-S4-hhE" id="C8u-Fp-ZfO"/>
             </connections>
             <point key="canvasLocation" x="255" y="192"/>

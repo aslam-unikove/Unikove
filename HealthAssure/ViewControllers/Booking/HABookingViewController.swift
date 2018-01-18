@@ -88,6 +88,7 @@ class HABookingViewController: UIViewController,UIScrollViewDelegate {
     var requestappointment_popup: HAbookingAppointmentPopup!
     var applyPromocode_popup: HAPromoCode_popup!
     var pickdate: HADatePicker!
+    var isEdit = false
     
     var mobileNumber_txtfld: UITextField!
     //MARK:- Variables
@@ -205,6 +206,56 @@ class HABookingViewController: UIViewController,UIScrollViewDelegate {
     }
     @IBAction func tapRequestAppointment_btn(_ sender: UIButton) {
         
+        if !isConnectedToNetwork() {
+            self.showOkAlert("Oops! no internet connection.")
+            
+        }else{
+            var relationId = HALoggedInUser.shared.getUserFamilyRelationId()
+            if relationId.isEmpty {
+                relationId = "0"
+            }
+            let relId: Int = Int(relationId)!
+            var memberId = ""
+            if self.patient_lbl.text == "Self" {
+                memberId = HALoggedInUser.shared.getUserMemberId()
+            }
+            else {
+               memberId = HADatabase.shared.getRelationMemberId(relationId: relId, relationType: "Son")
+                if memberId.isEmpty {
+                    memberId = "0"
+                }
+            }
+            let userDetail = ["UserLoginId": HALoggedInUser.shared.getUserId(), "Flag": isEdit ? "Update" : "Insert", "UserName": HALoggedInUser.shared.getUserName(), "MemberId": memberId, "FacilityId": "", "AppointmentDate": date_lbl.text!, "AppointmentTime": time_lbl.text!, "AppointmentId": isEdit ? 0 : 1, "ProviderId": data["provider_id"] ?? "", "Area": "", "Address1": data["address"] ?? "", "DoctorId": "1", "SlotId": "9", "MobileNo": "", "PremiumFlag": "N", "RelationId": memberId, "Email": HALoggedInUser.shared.getUserEmail(), "BuyFlag": "N", "IsService": "N", "ProductOfferId": "0"] as [String : Any]
+            
+            let params = ["details": userDetail,] as [String : Any]
+            
+            HASwiftLoader.show(animated: true)
+            
+            Singleton.shared.connection.startconnectionWithStringPostParams(urlString: "bookAppointment", params: params as! [String: NSObject]){ (receivedData) in
+                
+                print(receivedData)
+                HASwiftLoader.hide()
+                
+                if Singleton.shared.connection.responceCode == 1{
+                    
+                    if String(describing: receivedData.value(forKey: "status_code")!) == "200"{
+                        
+                        self.showSuccessAlert()
+                    }else{
+                        
+                        self.showOkAlert(String(describing: receivedData.value(forKey: "message")!))
+                    }
+                    
+                }else{
+                    
+                    self.showOkAlert(String(describing: receivedData.value(forKey: "Error")!))
+                }
+            }
+        }
+        
+    }
+    
+    func showSuccessAlert() {
         requestappointment_popup.frame = self.view.frame
         requestappointment_popup.ok_btn.addTarget(self, action: #selector(popViewController), for: .touchUpInside)
         requestappointment_popup.icon_img.layer.masksToBounds = true
@@ -216,8 +267,8 @@ class HABookingViewController: UIViewController,UIScrollViewDelegate {
         requestappointment_popup.layer.masksToBounds = true
         
         self.view.addSubview(requestappointment_popup)
-        
     }
+    
     @IBAction func tapCheckbox_btn(_ sender: UIButton) {
         
         if check_box_btn.tag == 0{

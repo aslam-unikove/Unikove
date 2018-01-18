@@ -56,6 +56,12 @@
 		22D1D87B1FFE078C007B9A9A /* HAUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D1D87A1FFE078C007B9A9A /* HAUtils.swift */; };
 		44C7CF2CE7F9A2D27CEDD82A /* Pods_HealthAssure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3083AA17298FEEE24A3E6F42 /* Pods_HealthAssure.framework */; };
 		7AFDCB86FB548C8843103B2E /* Pods_HealthAssureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030879BB6E91E93622755597 /* Pods_HealthAssureTests.framework */; };
+		AE4498B12010837200D988CE /* HAUserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4498B02010837200D988CE /* HAUserProfileVC.swift */; };
+		AE4498B42010864F00D988CE /* HAMyAppointmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4498B32010864F00D988CE /* HAMyAppointmentsVC.swift */; };
+		AE4498B62010874E00D988CE /* HAMyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4498B52010874E00D988CE /* HAMyAccountVC.swift */; };
+		AE4498B8201087ED00D988CE /* HANotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4498B7201087ED00D988CE /* HANotificationsVC.swift */; };
+		AE4498BA2010886F00D988CE /* HAFeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4498B92010886F00D988CE /* HAFeedbackVC.swift */; };
+		AE4498BC2010889400D988CE /* HAPromotionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4498BB2010889400D988CE /* HAPromotionsVC.swift */; };
 		AE604822200619DD00F2697A /* HAAboutHealthAssureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE604821200619DC00F2697A /* HAAboutHealthAssureVC.swift */; };
 		AE868D9A200F1B0C0029BD17 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AE868D99200F1B0C0029BD17 /* GoogleMaps.bundle */; };
 		BE122A85200E09C200D40113 /* HAAvailibilityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE122A84200E09C200D40113 /* HAAvailibilityTableViewCell.swift */; };
@@ -177,6 +183,12 @@
 		9ABDBD920083B32786AC8947 /* Pods-HealthAssure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssure/Pods-HealthAssure.debug.xcconfig"; sourceTree = "<group>"; };
 		A57A79705C276CD3128C0CDA /* Pods-HealthAssureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthAssureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthAssureTests/Pods-HealthAssureTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7A67D5FEC4C21F42D2FDA70 /* Pods_HealthAssureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthAssureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4498B02010837200D988CE /* HAUserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAUserProfileVC.swift; sourceTree = "<group>"; };
+		AE4498B32010864F00D988CE /* HAMyAppointmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAMyAppointmentsVC.swift; sourceTree = "<group>"; };
+		AE4498B52010874E00D988CE /* HAMyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAMyAccountVC.swift; sourceTree = "<group>"; };
+		AE4498B7201087ED00D988CE /* HANotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HANotificationsVC.swift; sourceTree = "<group>"; };
+		AE4498B92010886F00D988CE /* HAFeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAFeedbackVC.swift; sourceTree = "<group>"; };
+		AE4498BB2010889400D988CE /* HAPromotionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPromotionsVC.swift; sourceTree = "<group>"; };
 		AE604821200619DC00F2697A /* HAAboutHealthAssureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HAAboutHealthAssureVC.swift; sourceTree = "<group>"; };
 		AE868D99200F1B0C0029BD17 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		BE122A84200E09C200D40113 /* HAAvailibilityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAAvailibilityTableViewCell.swift; sourceTree = "<group>"; };
@@ -333,6 +345,10 @@
 				0B039DFC2000D463006F8B30 /* HALeftNavigationVC.swift */,
 				AE604821200619DC00F2697A /* HAAboutHealthAssureVC.swift */,
 				BEE9428420088670004B02FC /* HAFilterViewController.swift */,
+				AE4498B52010874E00D988CE /* HAMyAccountVC.swift */,
+				AE4498B7201087ED00D988CE /* HANotificationsVC.swift */,
+				AE4498B92010886F00D988CE /* HAFeedbackVC.swift */,
+				AE4498BB2010889400D988CE /* HAPromotionsVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -400,6 +416,8 @@
 		229830C11FF22E8400737ACA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE4498B22010861100D988CE /* Appointments */,
+				AE4498AF201082FF00D988CE /* Profile */,
 				2244F5451FF2622E00323ED8 /* Login */,
 				2293CC2E1FFB4FA700AD6427 /* Home */,
 				BE8EE371200CA1E800947DF9 /* Booking */,
@@ -468,6 +486,22 @@
 				A7A67D5FEC4C21F42D2FDA70 /* Pods_HealthAssureUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE4498AF201082FF00D988CE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AE4498B02010837200D988CE /* HAUserProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AE4498B22010861100D988CE /* Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				AE4498B32010864F00D988CE /* HAMyAppointmentsVC.swift */,
+			);
+			path = Appointments;
 			sourceTree = "<group>";
 		};
 		BE122A8A200E39E600D40113 /* Booking */ = {
@@ -853,11 +887,13 @@
 			files = (
 				0B322A82200A5AEF00FC5212 /* HALoggedInUser.swift in Sources */,
 				BEBABD1D200F8A6E005DF217 /* HADatePicker.swift in Sources */,
+				AE4498B12010837200D988CE /* HAUserProfileVC.swift in Sources */,
 				BE72FE3E200636D50020418A /* WelcomeViewViewController.swift in Sources */,
 				0B5B34C02009E19700CA79DF /* FMDatabase.m in Sources */,
 				BE8EE373200CB59600947DF9 /* HABookingViewController.swift in Sources */,
 				BE8EE36C200C7E5A00947DF9 /* HAHome_services_popup_Cell.swift in Sources */,
 				2270CA941FFCF55300A41EF7 /* HAPromoCodeViewController.swift in Sources */,
+				AE4498BC2010889400D988CE /* HAPromotionsVC.swift in Sources */,
 				2270CA8B1FFCACFE00A41EF7 /* HAHomeCollectionViewCell.swift in Sources */,
 				BE72FE302005FA8C0020418A /* HA_HospitalDetail_popup.swift in Sources */,
 				2244F5471FF2627D00323ED8 /* HAOTPViewController.swift in Sources */,
@@ -873,17 +909,20 @@
 				BE72FE322005FAA00020418A /* HAHomeVIewController_extension.swift in Sources */,
 				BE672251200F233F0005D10B /* HAbookingAppointmentPopup.swift in Sources */,
 				2270CA911FFCE05300A41EF7 /* HABuyServicesCell.swift in Sources */,
+				AE4498B42010864F00D988CE /* HAMyAppointmentsVC.swift in Sources */,
 				0B039DFB2000D3C7006F8B30 /* SlideMenuController.swift in Sources */,
 				22884C951FF64FE500C42643 /* HAConstants.swift in Sources */,
 				BE5DDADB2007630500B973D7 /* Singleton.swift in Sources */,
 				BE5DDAD9200740E300B973D7 /* Webservices.swift in Sources */,
 				BEBABD19200F87FA005DF217 /* HABookingViewController_extension.swift in Sources */,
+				AE4498B62010874E00D988CE /* HAMyAccountVC.swift in Sources */,
 				2287C8C42003AAE5005E604A /* HAProviderListTableViewCell.swift in Sources */,
 				0B039E042000D945006F8B30 /* HALeftVCCell.swift in Sources */,
 				221189981FFFAF6500C05EC3 /* HAProviderListVC.swift in Sources */,
 				221FE3711FFD116900BBB04B /* SpecialistConsultationVC.swift in Sources */,
 				0B8428201FF790C300A2404F /* HAHelperClass.swift in Sources */,
 				BEBABD17200F775A005DF217 /* HAPromoCode_popup.swift in Sources */,
+				AE4498BA2010886F00D988CE /* HAFeedbackVC.swift in Sources */,
 				BE423C792004A21F00468D84 /* textfieldExtension.swift in Sources */,
 				BE8CE8222008A9AA00FDEE4A /* HAProviderList_Sos_popup.swift in Sources */,
 				22821ECA1FF4CAF600BF7492 /* HARegistrationCell.swift in Sources */,
@@ -894,6 +933,7 @@
 				BE122A89200E09F300D40113 /* HAAviailibityViewController.swift in Sources */,
 				BE122A87200E09DE00D40113 /* HAAvailibilityCollectionViewCell.swift in Sources */,
 				0B5B34C42009E19700CA79DF /* FMResultSet.m in Sources */,
+				AE4498B8201087ED00D988CE /* HANotificationsVC.swift in Sources */,
 				22D1D87B1FFE078C007B9A9A /* HAUtils.swift in Sources */,
 				229830CA1FF23C8200737ACA /* HALoginViewController.swift in Sources */,
 				BE8CE8262008C8C100FDEE4A /* HAHome_Services_popup.swift in Sources */,

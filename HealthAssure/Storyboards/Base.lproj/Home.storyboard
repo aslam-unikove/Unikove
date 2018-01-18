@@ -1368,6 +1368,276 @@
             </objects>
             <point key="canvasLocation" x="849" y="116"/>
         </scene>
+        <!--User ProfileVC-->
+        <scene sceneID="4Rz-Gb-dW3">
+            <objects>
+                <viewController storyboardIdentifier="HAUserProfileVC" id="rfE-Fn-W5w" customClass="HAUserProfileVC" customModule="HealthAssure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6YN-6I-a76">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqB-Mw-d8V">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b7-Fk-WJx">
+                                        <rect key="frame" x="0.0" y="20" width="370" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="yMR-2m-jaK"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="40" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="PROFILE" image="menuIcon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.25490196079999999" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3b7-Fk-WJx" firstAttribute="leading" secondItem="fqB-Mw-d8V" secondAttribute="leading" id="BaO-OO-280"/>
+                                    <constraint firstItem="3b7-Fk-WJx" firstAttribute="top" secondItem="fqB-Mw-d8V" secondAttribute="top" constant="20" id="DZt-VM-zf3"/>
+                                    <constraint firstAttribute="trailing" secondItem="3b7-Fk-WJx" secondAttribute="trailing" constant="5" id="Ha6-mG-kpL"/>
+                                    <constraint firstAttribute="height" constant="74" id="Kh7-jp-JUp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fqB-Mw-d8V" firstAttribute="top" secondItem="6YN-6I-a76" secondAttribute="top" id="DUX-e7-fiX"/>
+                            <constraint firstItem="fqB-Mw-d8V" firstAttribute="leading" secondItem="bks-e1-0oL" secondAttribute="leading" id="mCp-6X-hHt"/>
+                            <constraint firstItem="fqB-Mw-d8V" firstAttribute="trailing" secondItem="bks-e1-0oL" secondAttribute="trailing" id="pFV-7Z-hLT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bks-e1-0oL"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="3b7-Fk-WJx" id="Ed9-KN-fZO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoi-7D-3vB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--My AppointmentsVC-->
+        <scene sceneID="QYs-Ey-rIg">
+            <objects>
+                <viewController storyboardIdentifier="HAMyAppointmentsVC" id="CKH-FE-nTa" customClass="HAMyAppointmentsVC" customModule="HealthAssure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t6S-1V-URw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGJ-rs-DgF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YH4-OY-WmS">
+                                        <rect key="frame" x="0.0" y="20" width="370" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qYO-Ph-sA2"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="40" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="MY APPOINTMENTS" image="menuIcon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.25490196079999999" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="3EK-6O-owK"/>
+                                    <constraint firstAttribute="trailing" secondItem="YH4-OY-WmS" secondAttribute="trailing" constant="5" id="7vM-xw-Bej"/>
+                                    <constraint firstItem="YH4-OY-WmS" firstAttribute="top" secondItem="UGJ-rs-DgF" secondAttribute="top" constant="20" id="M2v-ae-t0o"/>
+                                    <constraint firstItem="YH4-OY-WmS" firstAttribute="leading" secondItem="UGJ-rs-DgF" secondAttribute="leading" id="Wow-Wk-4Mb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UGJ-rs-DgF" firstAttribute="trailing" secondItem="800-fY-WoK" secondAttribute="trailing" id="4sh-lg-QKa"/>
+                            <constraint firstItem="UGJ-rs-DgF" firstAttribute="leading" secondItem="800-fY-WoK" secondAttribute="leading" id="OnT-em-VTM"/>
+                            <constraint firstItem="UGJ-rs-DgF" firstAttribute="top" secondItem="t6S-1V-URw" secondAttribute="top" id="jKE-JO-w0L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="800-fY-WoK"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="YH4-OY-WmS" id="ypa-aW-nS7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVa-Qe-VB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--My AccountVC-->
+        <scene sceneID="a2v-OH-cp4">
+            <objects>
+                <viewController storyboardIdentifier="HAMyAccountVC" id="lOb-rh-Ce1" customClass="HAMyAccountVC" customModule="HealthAssure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TkB-e8-Rzh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3N-hq-DgS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7A-II-KYJ">
+                                        <rect key="frame" x="0.0" y="20" width="370" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Pcq-ka-3Jl"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="40" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="MY ACCOUNT" image="menuIcon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.25490196079999999" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="S7A-II-KYJ" secondAttribute="trailing" constant="5" id="3nO-uD-zn5"/>
+                                    <constraint firstItem="S7A-II-KYJ" firstAttribute="top" secondItem="O3N-hq-DgS" secondAttribute="top" constant="20" id="5OV-MX-LsN"/>
+                                    <constraint firstAttribute="height" constant="74" id="See-ww-vRD"/>
+                                    <constraint firstItem="S7A-II-KYJ" firstAttribute="leading" secondItem="O3N-hq-DgS" secondAttribute="leading" id="q6k-ED-6ji"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O3N-hq-DgS" firstAttribute="top" secondItem="TkB-e8-Rzh" secondAttribute="top" id="5Uh-3D-B87"/>
+                            <constraint firstItem="O3N-hq-DgS" firstAttribute="leading" secondItem="QGR-rc-uSN" secondAttribute="leading" id="LRZ-YK-byy"/>
+                            <constraint firstItem="O3N-hq-DgS" firstAttribute="trailing" secondItem="QGR-rc-uSN" secondAttribute="trailing" id="OX3-WK-3Ii"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QGR-rc-uSN"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="S7A-II-KYJ" id="cLp-Vs-FRa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPs-Yi-HOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--NotificationsVC-->
+        <scene sceneID="DBg-CI-UFv">
+            <objects>
+                <viewController storyboardIdentifier="HANotificationsVC" id="9xK-Vx-HRo" customClass="HANotificationsVC" customModule="HealthAssure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hNh-Re-N4m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4a-ms-UkJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbt-6b-7nf">
+                                        <rect key="frame" x="0.0" y="20" width="370" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="sDT-Mr-tb6"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="40" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="NOTIFICATIONS" image="menuIcon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.25490196079999999" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tbt-6b-7nf" firstAttribute="leading" secondItem="a4a-ms-UkJ" secondAttribute="leading" id="6LA-4p-dfN"/>
+                                    <constraint firstItem="tbt-6b-7nf" firstAttribute="top" secondItem="a4a-ms-UkJ" secondAttribute="top" constant="20" id="CAU-Zf-pqC"/>
+                                    <constraint firstAttribute="height" constant="74" id="mE3-TE-m2k"/>
+                                    <constraint firstAttribute="trailing" secondItem="tbt-6b-7nf" secondAttribute="trailing" constant="5" id="qwJ-GF-KR1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a4a-ms-UkJ" firstAttribute="trailing" secondItem="Qwf-YN-EiA" secondAttribute="trailing" id="Rbe-jF-jhZ"/>
+                            <constraint firstItem="a4a-ms-UkJ" firstAttribute="leading" secondItem="Qwf-YN-EiA" secondAttribute="leading" id="tgB-hT-ad6"/>
+                            <constraint firstItem="a4a-ms-UkJ" firstAttribute="top" secondItem="hNh-Re-N4m" secondAttribute="top" id="udx-4Y-djW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qwf-YN-EiA"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="tbt-6b-7nf" id="r8O-Pb-72X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W9c-r0-dSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--FeedbackVC-->
+        <scene sceneID="sAA-0h-USR">
+            <objects>
+                <viewController storyboardIdentifier="HAFeedbackVC" id="Duc-2W-icr" customClass="HAFeedbackVC" customModule="HealthAssure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mHk-QH-9MI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6d-Xc-FiT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5M-7k-QCY">
+                                        <rect key="frame" x="0.0" y="20" width="370" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="30r-vE-eN2"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="40" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="FEEDBACK" image="menuIcon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.25490196079999999" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="g5M-7k-QCY" firstAttribute="top" secondItem="i6d-Xc-FiT" secondAttribute="top" constant="20" id="0nE-t3-7UV"/>
+                                    <constraint firstAttribute="trailing" secondItem="g5M-7k-QCY" secondAttribute="trailing" constant="5" id="9sd-Ts-aUy"/>
+                                    <constraint firstItem="g5M-7k-QCY" firstAttribute="leading" secondItem="i6d-Xc-FiT" secondAttribute="leading" id="FOq-cv-pW2"/>
+                                    <constraint firstAttribute="height" constant="74" id="T5H-ZF-XLO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i6d-Xc-FiT" firstAttribute="trailing" secondItem="Gzw-zm-zOw" secondAttribute="trailing" id="0kC-j5-4P5"/>
+                            <constraint firstItem="i6d-Xc-FiT" firstAttribute="top" secondItem="mHk-QH-9MI" secondAttribute="top" id="IRq-6O-tyo"/>
+                            <constraint firstItem="i6d-Xc-FiT" firstAttribute="leading" secondItem="Gzw-zm-zOw" secondAttribute="leading" id="OSS-OP-7ta"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gzw-zm-zOw"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="g5M-7k-QCY" id="kcS-g0-r0a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBa-jr-fPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--PromotionsVC-->
+        <scene sceneID="wud-ec-XnR">
+            <objects>
+                <viewController storyboardIdentifier="HAPromotionsVC" id="M65-pC-WeT" customClass="HAPromotionsVC" customModule="HealthAssure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1kQ-iX-Agf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wmy-NL-FTm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZP7-WC-3IJ">
+                                        <rect key="frame" x="0.0" y="20" width="370" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6ZZ-n0-COw"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="40" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="12" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="PROMOTIONS" image="menuIcon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.25490196079999999" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZP7-WC-3IJ" secondAttribute="trailing" constant="5" id="5mg-ck-5vw"/>
+                                    <constraint firstItem="ZP7-WC-3IJ" firstAttribute="leading" secondItem="Wmy-NL-FTm" secondAttribute="leading" id="BYJ-oA-471"/>
+                                    <constraint firstAttribute="height" constant="74" id="NqN-hj-JFc"/>
+                                    <constraint firstItem="ZP7-WC-3IJ" firstAttribute="top" secondItem="Wmy-NL-FTm" secondAttribute="top" constant="20" id="ZLc-wK-Pqc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wmy-NL-FTm" firstAttribute="leading" secondItem="pkZ-Aj-PlB" secondAttribute="leading" id="DsP-BI-Hqv"/>
+                            <constraint firstItem="Wmy-NL-FTm" firstAttribute="trailing" secondItem="pkZ-Aj-PlB" secondAttribute="trailing" id="cdR-CT-d7F"/>
+                            <constraint firstItem="Wmy-NL-FTm" firstAttribute="top" secondItem="1kQ-iX-Agf" secondAttribute="top" id="iEY-6A-hDf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pkZ-Aj-PlB"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="ZP7-WC-3IJ" id="SC7-Fb-Fkw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rq4-th-9Xm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="arrowDown" width="15" height="12"/>

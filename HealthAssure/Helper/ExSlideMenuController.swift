@@ -1,9 +1,9 @@
 //
-//  ExSlideMenuController.swift
-//  SlideMenuControllerSwift
+//  HALoginViewController.swift
+//  HealthAssure
 //
-//  Created by Yuji Hato on 11/11/15.
-//  Copyright © 2015 Yuji Hato. All rights reserved.
+//  Created by Brijesh Gupta on 26/12/17.
+//  Copyright © 2017 Unikove. All rights reserved.
 //
 
 import UIKit
@@ -13,10 +13,13 @@ class ExSlideMenuController : SlideMenuController {
     override func isTagetViewController() -> Bool {
         if let vc = UIApplication.topViewController() {
             if vc is HAHomeViewController ||
-            vc is HABuyServicesViewController ||
-            vc is HAPromoCodeViewController ||
-            vc is HAAboutHealthAssureVC ||
-            vc is SpecialistConsultationVC {
+            vc is HAMyAppointmentsVC ||
+            vc is HAMyAccountVC ||
+            vc is HANotificationsVC ||
+            vc is HAFeedbackVC ||
+            vc is HAPromotionsVC ||
+            vc is HAUserProfileVC ||
+            vc is HAAboutHealthAssureVC {
                 return true
             }
         }
